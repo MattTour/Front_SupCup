@@ -2,18 +2,16 @@
 
 # Start the project
 
-## Make sure the backend is running.
+Make sure the backend is running.
 
-## Start container with :
+Start container with :
 
-### `docker-compose up`
+`docker-compose up`
 
 Go to http://localhost:3000/
 
 # Stop the project
 
-## Stop container with :
+ Stop container with :
 
-### `docker-compose down`
-
-### `npm test`
+ `docker-compose down`
