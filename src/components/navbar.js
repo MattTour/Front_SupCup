@@ -1,4 +1,5 @@
 import logo from '../img/logo_small.png';
+import '../style/navbar.css';
 
 const Navbar = () => {
     return (
