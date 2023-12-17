@@ -16,7 +16,7 @@ const Navbar = () => {
                         <a class="nav-link" href="/">A PROPOS</a>
                     </div>
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link nav-button" href="/profil">MON COMPTE</a>
+                        <a class="nav-link nav-button" href="/login">SE CONNECTER</a>
                     </div>
                 </div>
             </div>
