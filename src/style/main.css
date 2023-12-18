@@ -27,20 +27,3 @@
 .btn:hover {
     transform: scale(1.1,1.1);
 }
-
-.footer {
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-}
-
-.footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer {
-    max-width: 1700px;
-    margin-left: auto;
-    margin-right: auto;
-}
