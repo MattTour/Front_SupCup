@@ -38,7 +38,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4">
                     <p>2023 SUP'CUP</p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-3"><a class="link-body-emphasis" href="/"><svg class="bi" width="24" height="24"><use href="#twitter"></use></svg></a></li>
