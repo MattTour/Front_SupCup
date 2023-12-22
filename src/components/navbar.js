@@ -11,9 +11,9 @@ const Navbar = () => {
                 <div class="collapse navbar-collapse">
                     <div class="navbar-nav">
                         <a class="nav-link" href="/">ACCEUIL</a>
-                        <a class="nav-link" href="/">MES SPORTS</a>
-                        <a class="nav-link" href="/">MES BARS</a>
-                        <a class="nav-link" href="/">A PROPOS</a>
+                        <a class="nav-link" href="/">SPORTS</a>
+                        <a class="nav-link" href="/bars">BARS</a>
+                        <a class="nav-link" href="/about-us">A PROPOS</a>
                     </div>
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link nav-button" href="/login">SE CONNECTER</a>

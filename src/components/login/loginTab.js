@@ -21,7 +21,7 @@ const LoginTab = () => {
                 </div>
             </div>
             <div class="forgot-pwd mb-4"><a href="/">Mot de passe oublié</a></div>
-            <div class="center">
+            <div class="center mb-3">
                 <button class="btn-submit btn" type="submit">SE CONNECTER</button>
             </div>
         </form>
