@@ -24,7 +24,7 @@ const Description = () => {
                 </div>
             </div>
             <div class="description-img">
-                <img src={supporters} alt="Photo de fans sportifs" />
+                <img src={supporters} alt="Fans sportifs" />
             </div>
         </div>
     )

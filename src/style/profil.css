@@ -1,0 +1,36 @@
+.profil-header {
+    width: 100%;
+    height: 420px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/basketball.png');
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.profil-textzone {
+    color: #fff;
+    width: 100%;
+    max-width: 1700px;
+    padding: 0 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profil-info {
+    margin-top: -100px;
+    height: 200px;
+    background: linear-gradient(0deg, #5A332D 50%, rgba(0, 0, 0, 0) 50%);
+    padding: 0 7%;
+}
+
+.profil-pic {
+    border-radius: 50%;
+}
+
+.profil-info-text {
+    color: #fff;
+    padding-left: 40px;
+    padding-top: 34px;
+}

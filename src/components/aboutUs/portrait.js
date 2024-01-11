@@ -9,7 +9,7 @@ const Portrait = () => {
                 <div class="fw-light txt-30 center">EQUIPE</div>
             </div>
             <div>
-                <img src={portraits} alt="Photo de l'équipe de SUPCUP" />
+                <img src={portraits} alt="Tous les membres de l'équipe de SUPCUP" />
             </div>
             <br />
         </div>
