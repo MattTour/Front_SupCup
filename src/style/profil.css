@@ -3,6 +3,7 @@
     height: 420px;
     background-size: cover;
     background-repeat: no-repeat;
+    /* TO-DO : crop image */
     background-image: url('../img/basketball.png');
     background-position: center;
     display: flex;

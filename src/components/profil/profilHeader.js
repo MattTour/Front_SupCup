@@ -1,8 +1,8 @@
 const ProfilHeader = () => {
     return (
-        <div class='profil-header'>
-            <div class='profil-textzone mt-5'>
-                <div class='title center'>MON PROFIL</div>
+        <div className='profil-header'>
+            <div className='profil-textzone mt-5'>
+                <div className='title center'>MON PROFIL</div>
             </div>
         </div>
     )

@@ -1,9 +1,9 @@
 const SliderHeader = () => {
     return (
-        <div class='slider-header'>
-            <div class='slider-textzone'>
-                <div class='title'> A NE PAS RATER </div>
-                <div class='txt-20'> PRÊT ? </div>
+        <div className='slider-header'>
+            <div className='slider-textzone'>
+                <div className='title'> A NE PAS RATER </div>
+                <div className='txt-20'> PRÊT ? </div>
             </div>
         </div>
     )

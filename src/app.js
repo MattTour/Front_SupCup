@@ -6,7 +6,7 @@ import Profil from './pages/profil';
 import useToken from './services/useToken';
 
 const App = () => {
-   const { token, setToken } = useToken();
+   const { setToken } = useToken();
 
    return (
       <>

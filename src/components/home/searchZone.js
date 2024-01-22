@@ -1,20 +1,20 @@
 const SearchZone = () => {
     return (
-        <div class='search-zone'>
-            <div class='search-params'>
-                <div class='search-item'>
+        <div className='search-zone'>
+            <div className='search-params'>
+                <div className='search-item'>
                     Sport
                 </div>
-                <div class='search-item'>
+                <div className='search-item'>
                     Date du match
                 </div>
-                <div class='search-item'>
+                <div className='search-item'>
                     Heure
                 </div>
-                <div class='search-item'>
+                <div className='search-item'>
                     Equipe
                 </div>
-                <div class='search-item search-btn'>
+                <div className='search-item search-btn'>
                     <a href='/'>RECHERCHER</a>
                 </div>
             </div>

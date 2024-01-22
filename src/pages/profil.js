@@ -1,5 +1,7 @@
 import Navbar from '../components/navbar';
 import ProfilHeader from '../components/profil/profilHeader';
+import FavoriteEquipes from '../components/profil/favoriteEquipes';
+import FavoriteSports from '../components/profil/favoriteSports';
 import Footer from '../components/footer';
 import '../style/profil.css';
 import UserInfo from '../components/profil/userInfo';
@@ -16,7 +18,9 @@ const Profil = () => {
     return (<>
         <Navbar />
         <ProfilHeader />
-        <UserInfo />
+        <UserInfo token={token}/>
+        <FavoriteEquipes token={token}/>
+        <FavoriteSports token={token}/>
         <Footer />
     </>
     )

@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import useToken from "../../services/useToken";
+import { useNavigate } from "react-router-dom";
 
 async function LoginUser(email, password) {
     return fetch('http://localhost:5001/user/login',{
@@ -11,11 +12,19 @@ async function LoginUser(email, password) {
             'email': email,
             'password': password
         })
-    }).then(data => data.json());
+    })
+    .then(data => {
+        if (data.ok) {
+            return data.json();
+        }
+
+        return null;
+    });
 }
 
 const LoginTab = () => {
-    const {token, setToken} = useToken();
+    const navigate = useNavigate();
+    const {setToken} = useToken();
 
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -26,34 +35,40 @@ const LoginTab = () => {
             email,
             password
         );
-        setToken(token);
+        if (token !== null) {
+            setToken(token);
+            navigate('/profil');
+        } else {
+            navigate('/login?connexion=false');
+        }
+        // TO-DO : Ajouter affichage si token null pour prévenir que mail ou mdp incorrect !!
     }
-  return (
-    <div className="login-tab">
-        <form onSubmit={handleSubmit}>
-            <div class="mb-4 mt-2">
-                <div class="mb-2">
-                    <label>Adresse Email</label>
+    return (
+        <div className="login-tab">
+            <form onSubmit={handleSubmit}>
+                <div className="mb-4 mt-2">
+                    <div className="mb-2">
+                        <label>Adresse Email</label>
+                    </div>
+                    <div>
+                        <input onChange={(e)=>setEmail(e.target.value)} className="account-input" type="text" placeholder="Entrez votre email..." name="email" required></input>
+                    </div>
                 </div>
-                <div>
-                    <input onChange={(e)=>setEmail(e.target.value)} class="account-input" type="text" placeholder="Entrez votre email..." name="email" required></input>
+                <div className="mb-2">
+                    <div className="mb-2">
+                        <label>Mot de passe</label>
+                    </div>
+                    <div>
+                        <input onChange={(e)=>setPassword(e.target.value)} className="account-input" type="password" placeholder="Entrez votre mot de passe..." name="password" required></input>
+                    </div>
                 </div>
-            </div>
-            <div class="mb-2">
-                <div class="mb-2">
-                    <label>Mot de passe</label>
+                <div className="forgot-pwd mb-4"><a href="/">Mot de passe oublié</a></div>
+                <div className="center mb-3">
+                    <button className="btn-submit btn" type="submit">SE CONNECTER</button>
                 </div>
-                <div>
-                    <input onChange={(e)=>setPassword(e.target.value)} class="account-input" type="password" placeholder="Entrez votre mot de passe..." name="password" required></input>
-                </div>
-            </div>
-            <div class="forgot-pwd mb-4"><a href="/">Mot de passe oublié</a></div>
-            <div class="center mb-3">
-                <button class="btn-submit btn" type="submit">SE CONNECTER</button>
-            </div>
-        </form>
-    </div>
-  );
+            </form>
+        </div>
+    );
 };
 
 export default LoginTab;
