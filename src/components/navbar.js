@@ -1,14 +1,28 @@
 import logo from '../img/logo_small.png';
+import logout from '../img/logout.svg';
 import '../style/navbar.css';
 import useToken from '../services/useToken';
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-    let button;
-    const {token, setToken} = useToken();
+    const navigate = useNavigate();
+
+    let buttonLogin;
+    let disconnect;
+
+    const {token, unsetToken} = useToken();
+
+    const handleDisconnect = async (e) => {
+        unsetToken(null);
+        navigate('/');
+    }
+
     if(!token){
-        button = <a className="nav-link nav-button" href="/login">SE CONNECTER</a>;
+        buttonLogin = <a className="nav-link nav-button" href="/login">SE CONNECTER</a>;
+        disconnect = "";
     } else {
-        button = <a className="nav-link nav-button" href="/profil">MON PROFIL</a>;
+        buttonLogin = <a className="nav-link nav-button" href="/profil">MON PROFIL</a>;
+        disconnect = <button className="nav-link" onClick={handleDisconnect}><img src={logout} alt='Logout'></img></button>;
     }
     return (
         <nav className="navbar fixed-top navbar-expand-lg">
@@ -24,7 +38,8 @@ const Navbar = () => {
                         <a className="nav-link" href="/about-us">A PROPOS</a>
                     </div>
                     <div className="navbar-nav ms-auto">
-                        {button}
+                        {disconnect}
+                        {buttonLogin}
                     </div>
                 </div>
             </div>
