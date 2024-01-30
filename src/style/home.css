@@ -1,0 +1,107 @@
+.slider-header {
+    width: 100%;
+    height: 720px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/hockey.jpeg');
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.slider-textzone {
+    color: #fff;
+    width: 100%;
+    max-width: 1700px;
+    padding: 0 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-zone {
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: -50px;
+}
+
+.search-params {
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+.search-item {
+    flex: 1 1 0px;
+    padding: 40px 0;
+}
+
+.search-btn {
+    background-color: #689ABA;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.search-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.search-btn:hover {
+    transform: scale(1.02, 1.02);
+}
+
+.event-card {
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 450px;
+    border: none;
+}
+
+.bar-card {
+    border-radius: 10px;
+    width: 400px;
+    min-width: 400px;
+    border: none;
+    margin-right: 25px;
+}
+
+.card-img-top {
+    max-height: 250px;
+    height: 100%;
+}
+
+.card-img-background {
+    background-color: rgba(255, 255, 255, 0.70);
+    padding: 15px;
+    text-align: center;
+}
+
+.card-img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.top-events {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 1700px;
+}
+
+.bar-list {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.bar-list::-webkit-scrollbar {
+    display: none;
+}
