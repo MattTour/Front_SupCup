@@ -26,15 +26,17 @@ const FavoriteEquipes = ({token}) => {
             <div className="inline-flex bar-list">
                 {equipes.length > 0 ? 
                 equipes.map((equipe) => (
-                    <div className="card bar-card">
-                        <img src={escrimeImg} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <div className="card-text fw-medium">{equipe.name}</div>
-                            <div className="card-text opacity-75">{equipe.logo}</div>
-                        </div>
+                    <div className="card horizontal-scroll-card">
+                        <a href="#">
+                            <img src={escrimeImg} className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <div className="card-text fw-medium">{equipe.name}</div>
+                                <div className="card-text opacity-75">{equipe.logo}</div>
+                            </div>
+                        </a>
                     </div>
                 ))
-                :(  <div className="card bar-card">
+                :(  <div className="card horizontal-scroll-card">
                         <img src={escrimeImg} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <div className="card-text fw-medium">Pas de favoris</div>

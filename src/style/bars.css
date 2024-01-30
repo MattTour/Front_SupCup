@@ -3,7 +3,6 @@
     height: 420px;
     background-size: cover;
     background-repeat: no-repeat;
-    /* TO-DO : crop image */
     background-image: url('../img/bars_supporters.png');
     background-position: center;
     display: flex;
@@ -17,4 +16,41 @@
     padding: 0 130px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.bar-description {
+    border-radius: 30px;
+    background-color: #fff;
+    width: 80%;
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+    overflow: hidden;
+}
+
+.bar-description-info {
+    width: 100%;
+    min-height: 400px;
+}
+
+.bar-description-info-text {
+    flex: 2;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+.bar-description-info-picture {
+    flex: 1;
+    max-width: 300px;
+}
+
+.bar-description-info-picture img {
+    height: 100%;
+    max-width: 300px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    object-fit: cover;
 }

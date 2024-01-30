@@ -1,0 +1,20 @@
+.sports-header {
+    width: 100%;
+    height: 420px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* TO-DO : crop image */
+    background-image: url('../img/hockey.jpeg');
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.sports-textzone {
+    color: #fff;
+    width: 100%;
+    max-width: 1700px;
+    padding: 0 130px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -33,7 +33,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse">
                     <div className="navbar-nav">
                         <a className="nav-link" href="/">ACCEUIL</a>
-                        <a className="nav-link" href="/">SPORTS</a>
+                        <a className="nav-link" href="/sports">SPORTS</a>
                         <a className="nav-link" href="/bars">BARS</a>
                         <a className="nav-link" href="/about-us">A PROPOS</a>
                     </div>

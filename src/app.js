@@ -4,6 +4,8 @@ import Login from './pages/login';
 import AboutUs from './pages/aboutUs';
 import Profil from './pages/profil';
 import Bars from './pages/bars';
+import Sports from './pages/sports';
+import BarDetails from './pages/barDetails';
 import useToken from './services/useToken';
 
 const App = () => {
@@ -17,6 +19,8 @@ const App = () => {
                <Route path="/about-us" element={<AboutUs />} />
                <Route path="/profil" element={<Profil />} />
                <Route path="/bars" element={<Bars />} />
+               <Route path="/sports" element={<Sports />} />
+               <Route path="/bar/:id" element={<BarDetails />} />
          </Routes>
       </>
    );

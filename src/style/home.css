@@ -64,12 +64,21 @@
     border: none;
 }
 
-.bar-card {
+.horizontal-scroll-card {
     border-radius: 10px;
     width: 400px;
     min-width: 400px;
     border: none;
     margin-right: 25px;
+}
+
+.horizontal-scroll-card:hover{
+    transform: scale(1.02, 1.02);
+}
+
+.horizontal-scroll-card a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .card-img-top {
