@@ -52,7 +52,7 @@ const RegisterTab = () => {
                     <input class="account-input" type="tel" placeholder="Entrez votre téléphone..." name="phone" required></input>
                 </div>
             </div>
-            <div class="center">
+            <div class="center mb-3">
                 <button class="btn-submit btn" type="submit">CREER UN COMPTE</button>
             </div>
         </form>
