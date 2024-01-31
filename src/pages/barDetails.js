@@ -2,6 +2,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import BarDetailsHeader from '../components/barDetails/barDetailsHeader';
 import BarDescription from '../components/barDetails/barDescription';
+import BarEvents from '../components/barDetails/barEvents';
 import '../style/bars.css';
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react';
@@ -21,11 +22,12 @@ const BarDetails = () => {
             setBar(data);
         });
     }, [params]);
-
+    
     return (<>
         <Navbar />
         <BarDetailsHeader bar={bar} />
         <BarDescription bar={bar} />
+        <BarEvents bar={bar} />
         <Footer />
     </>
     )
