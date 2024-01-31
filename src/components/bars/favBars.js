@@ -25,17 +25,6 @@ const FavBars = ({token}) => {
                 <div className="fw-light txt-30 center">L'AMBIANCE DU STADE</div>
             </div>
             <div className="inline-flex bar-list">
-                {bars.map((bars) => (
-                    <div className="card horizontal-scroll-card">
-                        <a href="#">
-                            <img src={escrimeImg} className="card-img-top" alt="..." />
-                            <div className="card-body">
-                                <div className="card-text fw-medium">{bars.name}</div>
-                                <div className="card-text opacity-75">{bars.address}, {bars.postcode} {bars.city}</div>
-                            </div>
-                        </a>
-                    </div>
-                ))}
                 {bars.length > 0 ? 
                 bars.map((bar) => (
                     <div className="card horizontal-scroll-card">
