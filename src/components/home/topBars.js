@@ -19,8 +19,8 @@ const TopBars = () => {
                 <div className="fw-light txt-30 center">DU MOMENT</div>
             </div>
             <div className="inline-flex bar-list">
-                {bars.map((bar) => (
-                    <div className="card horizontal-scroll-card">
+                {bars.map((bar, index) => (
+                    <div key={index} className="card horizontal-scroll-card">
                         <a href={'/bar/' + bar.id}>
                             <img src={escrimeImg} className="card-img-top" alt="..." />
                             <div className="card-body">

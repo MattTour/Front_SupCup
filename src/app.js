@@ -7,6 +7,7 @@ import Bars from './pages/bars';
 import Sports from './pages/sports';
 import BarDetails from './pages/barDetails';
 import useToken from './services/useToken';
+import EventDetails from './pages/eventDetails';
 
 const App = () => {
    const { setToken } = useToken();
@@ -21,6 +22,7 @@ const App = () => {
                <Route path="/bars" element={<Bars />} />
                <Route path="/sports" element={<Sports />} />
                <Route path="/bar/:id" element={<BarDetails />} />
+               <Route path="/events/:id" element={<EventDetails />} />
          </Routes>
       </>
    );

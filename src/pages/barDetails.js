@@ -13,16 +13,16 @@ const BarDetails = () => {
     const [bar, setBar] = useState([]);
     const [events, setEvents] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5001/bar/details/'+params.id,{
+        fetch('http://localhost:5001/bar/details/' + params.id, {
             method: 'GET'
         })
-        .then((res) => {
-            return res.json();
-        })
-        .then((data) => {
-            setBar(data.bar);
-            setEvents(data.events);
-        });
+            .then((res) => {
+                return res.json();
+            })
+            .then((data) => {
+                setBar(data.bar);
+                setEvents(data.events);
+            });
     }, [params]);
 
     return (<>

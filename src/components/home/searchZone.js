@@ -32,8 +32,8 @@ const SearchZone = () => {
                     <div className='search-item'>
                         <select className='select-search' name="sport" id="sport">
                             <option value='0'>Quel sport ?</option>
-                            {sports.map((sport) => (
-                                <option value={sport.id}>{sport.name}</option>
+                            {sports.map((sport, index) => (
+                                <option key={index} value={sport.id}>{sport.name}</option>
                             ))}
                         </select>
                     </div>
@@ -52,8 +52,8 @@ const SearchZone = () => {
                         <select className='select-search-equipe' name="equipe" id="equipe">
                             {/* TO-DO : Ajouter des champs input avec recherche dynamique */}
                             <option value='0'>Quelle équipe ?</option>
-                            {equipes.map((equipe) => (
-                                <option value={equipe.id}>{equipe.name}</option>
+                            {equipes.map((equipe, index) => (
+                                <option key={index} value={equipe.id}>{equipe.name}</option>
                             ))}
                         </select>
                     </div>
