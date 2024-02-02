@@ -9,8 +9,8 @@ const EventSport = ({ events }) => {
                 <div className="inline-flex bar-list">
                     {events.length > 0 ?
                         events.map((event, index) => (
-                            <div className="card horizontal-scroll-card">
-                                <a key={index} href={'/event/' + event.id}>
+                            <div key={index} className="card horizontal-scroll-card">
+                                <a href={'/event/' + event.id}>
                                     <img src={escrimeImg} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <div className="card-text fw-medium">{event.name}</div>
