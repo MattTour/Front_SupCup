@@ -11,8 +11,8 @@ const BarEvents = ({ events }) => {
                 <div className="row row-cols-1 row-cols-md-4 g-4">
                     {events.length > 0 ?
                         events.map((event, index) => (
-                            <a href={'/events/' + event.eventId}>
-                                <div key={index} className="col">
+                            <a key={index} href={'/event/' + event.eventId}>
+                                <div className="col">
                                     <div className="card event-card">
                                         <div className="card-body space-between w-100">
                                             <div className="card-text">{event.eventDate}</div>
