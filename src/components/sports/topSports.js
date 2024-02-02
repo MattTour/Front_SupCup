@@ -12,6 +12,7 @@ const TopSports = () => {
             setSports(data);
         });
     }, []);
+    
     return (
         <div className="top-events mb-5">
             <div className="mt-5 mb-5">
@@ -19,9 +20,9 @@ const TopSports = () => {
                 <div className="fw-light txt-30 center">DU MOMENT</div>
             </div>
             <div className="inline-flex bar-list">
-                {sports.map((sport) => (
+                {sports.map((sport, index) => (
                     <div className="card horizontal-scroll-card">
-                        <a href="#">
+                        <a key={index} href={'/sport/' + sport.id}>
                             <img src={escrimeImg} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <div className="card-text fw-medium">{sport.name}</div>
