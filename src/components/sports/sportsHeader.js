@@ -1,8 +1,9 @@
-const SportsHeader = () => {
+const SportsHeader = ({title}) => {
+
     return (
         <div className='sports-header'>
             <div className='sports-textzone mt-5'>
-                <div className='title center'>TOUS NOS SPORTS</div>
+                <div className='title center text-uppercase'>{title}</div>
             </div>
         </div>
     )
