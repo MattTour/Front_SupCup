@@ -1,4 +1,4 @@
-import escrimeImg from "../../img/escrime.jpeg"
+import escrimeImg from "../../img/escrime.jpeg";
 import { useState, useEffect } from 'react';
 
 const FavBars = ({token}) => {

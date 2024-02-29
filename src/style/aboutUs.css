@@ -17,3 +17,28 @@
     text-align: justify;
     align-self: center;
 }
+
+.description-img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.description-img img {
+    width: 100%;
+    min-width: 400px;
+}
+
+.team-img {
+    width: 100%;
+    max-width: 1200px;
+}
+
+@media screen and (max-width: 1000px) {
+    .description-img {
+        display: none;
+    }
+
+    .description-text {
+        padding-right: 0px;
+    }
+}

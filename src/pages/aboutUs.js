@@ -2,7 +2,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import AboutUsHeader from '../components/aboutUs/aboutUsHeader';
 import Description from '../components/aboutUs/description';
-import NavbarFiller from '../components/aboutUs/navbarFiller';
+import NavbarFiller from '../components/navbar/navbarFiller';
 import '../style/aboutUs.css';
 import Portrait from '../components/aboutUs/portrait';
 
