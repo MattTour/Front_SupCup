@@ -6,6 +6,7 @@ import Profil from './pages/profil';
 import Bars from './pages/bars';
 import Sports from './pages/sports';
 import BarDetails from './pages/barDetails';
+import Subscribe from './pages/subscribe';
 import useToken from './services/useToken';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
                <Route path="/bars" element={<Bars />} />
                <Route path="/sports" element={<Sports />} />
                <Route path="/bar/:id" element={<BarDetails />} />
+               <Route path="/subscribe" element={<Subscribe />} />
          </Routes>
       </>
    );

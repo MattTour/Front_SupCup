@@ -1,0 +1,43 @@
+.offers-title {
+    width: 80%;
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.offer-card {
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 1px #C74B0C;
+    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    min-width: 150px;
+}
+
+.offer-body {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px 40px;
+}
+
+.offer-title-separator {
+    height: 1px;
+    border-bottom: 1px solid #00000065;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe-button {
+    border: #C74B0C 1px solid;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe-button:hover {
+    transform: scale(1.1, 1.1);
+}

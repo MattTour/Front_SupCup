@@ -20,6 +20,9 @@ const FavoriteEquipes = ({token}) => {
     }, [token]);
     return (
         <div className="top-events mb-5">
+            <div className="mb-4 subscription-link subscription-button">
+                <a href="/subscribe">JE SUIS UN GERANT DE BAR</a>
+            </div>
             <div className="mt-5 mb-2">
                 <div className="txt-30">EQUIPES FAVORITES</div>
             </div>
