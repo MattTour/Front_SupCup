@@ -64,6 +64,14 @@
     border: none;
 }
 
+.event-card:hover {
+    transform: scale(1.02, 1.02);
+}
+
+.event-card a {
+    text-decoration: none;
+}
+
 .horizontal-scroll-card {
     border-radius: 10px;
     width: 400px;

@@ -1,4 +1,3 @@
-import escrimeImg from "../../img/escrime.jpeg";
 import { useState, useEffect } from 'react';
 
 const FavBars = ({token}) => {
@@ -25,11 +24,11 @@ const FavBars = ({token}) => {
                 <div className="fw-light txt-30 center">L'AMBIANCE DU STADE</div>
             </div>
             <div className="inline-flex bar-list">
-                {bars.length > 0 ? 
+                {bars.length > 0 ?
                 bars.map((bar) => (
                     <div className="card horizontal-scroll-card">
                         <a href="#">
-                            <img src={escrimeImg} className="card-img-top" alt="..." />
+                            <img src={bar.image ? "/image/" + bar.image : "/image/no-image.png"} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <div className="card-text fw-medium">{bar.name}</div>
                                 <div className="card-text opacity-75">{bar.address}, {bar.postcode} {bar.city}</div>
@@ -38,7 +37,7 @@ const FavBars = ({token}) => {
                     </div>
                 ))
                 :(  <div className="card horizontal-scroll-card">
-                        <img src={escrimeImg} className="card-img-top" alt="..." />
+                        <img src="/image/no-image.png" className="card-img-top" alt="..." />
                         <div className="card-body">
                             <div className="card-text fw-medium">Pas de favoris</div>
                         </div>

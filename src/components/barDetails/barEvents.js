@@ -1,5 +1,3 @@
-import escrimeImg from "../../img/escrime.jpeg"
-
 const BarEvents = ({ events }) => {
     return (
         <div className="top-events mb-5">
@@ -11,22 +9,20 @@ const BarEvents = ({ events }) => {
                 <div className="row row-cols-1 row-cols-md-4 g-4">
                     {events.length > 0 ?
                         events.map((event, index) => (
-                            <a key={index} href={'/event/' + event.eventId}>
-                                <div className="col">
+                            <div className="col">
+                                <a key={index} href={'/event/' + event.eventId}>
                                     <div className="card event-card">
                                         <div className="card-body space-between w-100">
                                             <div className="card-text">{event.eventDate}</div>
                                             <div className="card-text">{event.sportName}</div>
                                         </div>
-                                        <img src={escrimeImg} className="card-img" alt="..." />
+                                        <img src={event.image ? "/image/" + event.image : "/image/no-image.png"} className="card-img" alt="..." />
                                         <div className="card-img-overlay d-flex flex-column justify-content-end">
                                             <div className="card-text mt-auto position-absolute bottom-0 start-0 end-0 card-img-background txt-20 fw-bold">{event.eventName}</div>
                                         </div>
                                     </div>
-                                </div>
-
-                            </a>
-
+                                </a>
+                            </div>
                         ))
                         : (
                             <div className="col">
@@ -34,7 +30,7 @@ const BarEvents = ({ events }) => {
                                     <div className="card-body space-between w-100">
                                         <div className="card-text">Pas d'évènement</div>
                                     </div>
-                                    <img src={escrimeImg} className="card-img" alt="..." />
+                                    <img src="/image/no-image.png" className="card-img" alt="..." />
                                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                                         <div className="card-text mt-auto position-absolute bottom-0 start-0 end-0 card-img-background txt-20 fw-bold">Pas d'évènement</div>
                                     </div>

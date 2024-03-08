@@ -1,4 +1,4 @@
-import escrimeImg from "../../img/profil_pic.png"
+import profil_pic from "../../img/profil_pic.png"
 import { useState, useEffect } from 'react';
 
 const UserInfo = ({token}) => {
@@ -21,7 +21,7 @@ const UserInfo = ({token}) => {
     return (
         <div className="profil-info mb-5">
             <div className="inline-flex">
-                <img src={escrimeImg} className="profil-pic" alt="User profile pic"></img>
+                <img src={profil_pic} className="profil-pic" alt="User profile pic"></img>
                 <div className="profil-info-text">
                     <div className="title">{user.first_name} {user.last_name}</div>
                     <div className="txt-20 fw-bold">{user.email}</div>

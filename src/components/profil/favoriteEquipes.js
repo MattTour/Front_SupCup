@@ -1,4 +1,3 @@
-import escrimeImg from "../../img/escrime.jpeg"
 import { useState, useEffect } from 'react';
 
 const FavoriteEquipes = ({token}) => {
@@ -24,11 +23,11 @@ const FavoriteEquipes = ({token}) => {
                 <div className="txt-30">EQUIPES FAVORITES</div>
             </div>
             <div className="inline-flex bar-list">
-                {equipes.length > 0 ? 
+                {equipes.length > 0 ?
                 equipes.map((equipe) => (
                     <div className="card horizontal-scroll-card">
                         <a href="#">
-                            <img src={escrimeImg} className="card-img-top" alt="..." />
+                            <img src={equipe.logo ? "/image/" + equipe.logo : "/image/no-image.png"} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <div className="card-text fw-medium">{equipe.name}</div>
                                 <div className="card-text opacity-75">{equipe.logo}</div>
@@ -37,7 +36,7 @@ const FavoriteEquipes = ({token}) => {
                     </div>
                 ))
                 :(  <div className="card horizontal-scroll-card">
-                        <img src={escrimeImg} className="card-img-top" alt="..." />
+                        <img src="/image/no-image.png" className="card-img-top" alt="..." />
                         <div className="card-body">
                             <div className="card-text fw-medium">Pas de favoris</div>
                         </div>

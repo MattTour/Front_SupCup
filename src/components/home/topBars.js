@@ -1,4 +1,3 @@
-import escrimeImg from "../../img/escrime.jpeg"
 import { useState, useEffect } from 'react';
 
 const TopBars = () => {
@@ -22,7 +21,7 @@ const TopBars = () => {
                 {bars.map((bar, index) => (
                     <div key={index} className="card horizontal-scroll-card">
                         <a href={'/bar/' + bar.id}>
-                            <img src={escrimeImg} className="card-img-top" alt="..." />
+                            <img src={bar.image ? "/image/" + bar.image : "/image/no-image.png"} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <div className="card-text fw-medium">{bar.name}</div>
                                 <div className="card-text opacity-75">{bar.address}, {bar.postcode} {bar.city}</div>

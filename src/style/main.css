@@ -52,3 +52,7 @@ body {
 .btn:hover {
     transform: scale(1.1,1.1);
 }
+
+.col a {
+    text-decoration: none;
+}
