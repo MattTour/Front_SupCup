@@ -4,6 +4,7 @@ import useToken from '../services/useToken';
 import TopBars from '../components/home/topBars';
 import FavBars from '../components/bars/favBars';
 import '../style/bars.css';
+import '../style/home.css';
 import BarsHeader from '../components/bars/barsHeader';
 
 const Bars = () => {

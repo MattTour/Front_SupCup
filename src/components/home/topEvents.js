@@ -1,4 +1,3 @@
-import escrimeImg from "../../img/escrime.jpeg"
 import { useState, useEffect } from 'react';
 
 const TopEvents = () => {
@@ -22,13 +21,13 @@ const TopEvents = () => {
                 <div className="row row-cols-1 row-cols-md-4 g-4">
                     {events.map((event, index) => (
                         <div key={index} className="col">
-                            <a href={'/events/' + event.id}>
+                            <a href={'/event/' + event.id}>
                                 <div className="card event-card">
                                     <div className="card-body space-between w-100">
                                         <div className="card-text">{event.date_event}</div>
-                                        <div className="card-text">ESCRIME</div>
+                                        <div className="card-text">{event.sport_name}</div>
                                     </div>
-                                    <img src={escrimeImg} className="card-img" alt="..." />
+                                    <img src={event.image ? "/image/" + event.image : "/image/no-image.png"} className="card-img" alt="..." />
                                     <div className="card-img-overlay d-flex flex-column justify-content-end">
                                         <div className="card-text mt-auto position-absolute bottom-0 start-0 end-0 card-img-background txt-20 fw-bold">{event.name}</div>
                                     </div>

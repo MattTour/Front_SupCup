@@ -1,4 +1,3 @@
-import escrimeImg from "../../img/escrime.jpeg"
 import { useState, useEffect } from 'react';
 
 const TopSports = () => {
@@ -12,7 +11,7 @@ const TopSports = () => {
             setSports(data);
         });
     }, []);
-    
+
     return (
         <div className="top-events mb-5">
             <div className="mt-5 mb-5">
@@ -23,7 +22,7 @@ const TopSports = () => {
                 {sports.map((sport, index) => (
                     <div className="card horizontal-scroll-card">
                         <a key={index} href={'/sport/' + sport.id}>
-                            <img src={escrimeImg} className="card-img-top" alt="..." />
+                            <img src={sport.image ? "/image/" + sport.image : "/image/no-image.png"} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <div className="card-text fw-medium">{sport.name}</div>
                             </div>

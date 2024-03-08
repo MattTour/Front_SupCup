@@ -13,6 +13,10 @@ body {
     font-weight: 700;
 }
 
+.txt-15 {
+    font-size: 15px;
+}
+
 .txt-20 {
     font-size: 20px;
 }
@@ -47,4 +51,8 @@ body {
 
 .btn:hover {
     transform: scale(1.1,1.1);
+}
+
+.col a {
+    text-decoration: none;
 }

@@ -1,4 +1,3 @@
-import escrimeImg from "../../img/escrime.jpeg"
 import { useState, useEffect } from 'react';
 
 const FavSports = ({token}) => {
@@ -25,22 +24,11 @@ const FavSports = ({token}) => {
                 <div className="fw-light txt-30 center">SPORTS D'EXCEPTION</div>
             </div>
             <div className="inline-flex bar-list">
-                {sports.map((sports) => (
-                    <div className="card horizontal-scroll-card">
-                        <a href="#">
-                            <img src={escrimeImg} className="card-img-top" alt="..." />
-                            <div className="card-body">
-                                <div className="card-text fw-medium">{sports.name}</div>
-                                <div className="card-text opacity-75">{sports.address}, {sports.postcode} {sports.city}</div>
-                            </div>
-                        </a>
-                    </div>
-                ))}
-                {sports.length > 0 ? 
+                {sports.length > 0 ?
                 sports.map((sport) => (
                     <div className="card horizontal-scroll-card">
                         <a href="#">
-                            <img src={escrimeImg} className="card-img-top" alt="..." />
+                            <img src={sport.image ? "/image/" + sport.image : "/image/no-image.png"} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <div className="card-text fw-medium">{sport.name}</div>
                                 <div className="card-text opacity-75">{sport.address}, {sport.postcode} {sport.city}</div>
@@ -49,7 +37,7 @@ const FavSports = ({token}) => {
                     </div>
                 ))
                 :(  <div className="card horizontal-scroll-card">
-                        <img src={escrimeImg} className="card-img-top" alt="..." />
+                        <img src="/image/no-image.png" className="card-img-top" alt="Placeholder, pas de photo disponible" />
                         <div className="card-body">
                             <div className="card-text fw-medium">Pas de favoris</div>
                         </div>

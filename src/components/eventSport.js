@@ -1,4 +1,3 @@
-import escrimeImg from "../img/escrime.jpeg";
 import '../style/eventSport.css';
 
 const EventSport = ({ events }) => {
@@ -11,7 +10,7 @@ const EventSport = ({ events }) => {
                         events.map((event, index) => (
                             <div key={index} className="card horizontal-scroll-card">
                                 <a href={'/event/' + event.id}>
-                                    <img src={escrimeImg} className="card-img-top" alt="..." />
+                                    <img src={event.image ? "/image/" + event.image : "/image/no-image.png"} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <div className="card-text fw-medium">{event.name}</div>
                                     </div>
@@ -19,7 +18,7 @@ const EventSport = ({ events }) => {
                             </div>
                         )) :
                         <div className="card horizontal-scroll-card">
-                            <img src={escrimeImg} className="card-img-top" alt="..." />
+                            <img src="/image/no-image.png" className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <div className="card-text fw-medium">Aucun évènement pour ce sport</div>
                             </div>

@@ -10,7 +10,7 @@ const Home = () => {
     return (<>
         <Navbar />
         <SliderHeader />
-        <SearchZone />
+        {/* <SearchZone /> */}
         <TopEvents />
         <TopBars />
         <Footer />
